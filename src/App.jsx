@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 import DashboardLayout from './layout/DashboardLayout';
 import SignUp from './Pages/SignUp';
-import Login from './Pages/Login';
+import Login from './Pages/SignIn';
+import AccountSetup from './Pages/AccountSetup';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
         {/* Define your routes */}
         <Route path="/dashboard" element={<DashboardLayout />} />
+        <Route path="/account-setup" element={<AccountSetup/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         
